@@ -25,7 +25,7 @@ const SignUp = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         await axios
-            .post("https://nodejs-5-password-reset-flow.onrender.com/api/signup-user", formData)
+            .post("https://nodejs-5-password-reset-flow-2.onrender.com/api/signup-user", formData)
             .then((res) => {
                 toast.success(res.data.message);
                 navigate("/signin");

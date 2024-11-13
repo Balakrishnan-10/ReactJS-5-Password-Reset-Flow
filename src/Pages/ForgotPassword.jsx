@@ -20,7 +20,7 @@ const ForgotPassword = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("https://nodejs-5-password-reset-flow.onrender.com/api/forgot-password", formData)
+            const res = await axios.post("https://nodejs-5-password-reset-flow-2.onrender.com/api/forgot-password", formData)
             if (res.status === 200) {
                 toast.success(res.data.message);
                 navigate("/signin");

@@ -11,7 +11,7 @@ const Home = ({ token }) => {
     }, [])
 
     const fetchData = async () => {
-        await axios.get("https://nodejs-5-password-reset-flow.onrender.com/api/get-user", {
+        await axios.get("https://nodejs-5-password-reset-flow-2.onrender.com/api/get-user", {
             headers: { token },
         })
             .then((res) => {
